@@ -3,21 +3,22 @@ package ds;
 /**
  *
  * @author Ahmed Maher Halima
+ * @email phpcodertop@gmail.com
  */
 public class Stack {
     
     private int top;
-    private final long[] stackArrar;
+    private final char[] stackArrar;
     private final int maxSize;
     
     public Stack(int size){
         this.maxSize = size;
-        this.stackArrar = new long[size];
+        this.stackArrar = new char[size];
         this.top = -1;
     }
     
     
-    public void push(long i){
+    public void push(char i){
         if(this.isFull()){
             System.out.println("This Stack is already Full");
         }else{
@@ -26,7 +27,7 @@ public class Stack {
         }      
     }
     
-    public long pop(){
+    public char pop(){
         if(this.isEmpty()){
             System.out.println("This Stack is already empty");
         }else{
@@ -34,10 +35,10 @@ public class Stack {
             this.top--;
             return stackArrar[old_top]; 
         }
-        return -1;
+        return ' ';
     }
     
-    public long peak(){
+    public char peak(){
         return this.stackArrar[this.top];
     }
     
@@ -49,7 +50,7 @@ public class Stack {
         return (this.maxSize-1 == this.top);
     }
     
-    public long[] stackContent(){
+    public char[] stackContent(){
         return this.stackArrar;
     }
     
