@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package algorthms.and.datastructure;
+package algorithms.and.datastructure;
 
 import ds.Stack;
 import java.util.Iterator;
